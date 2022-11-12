@@ -20,7 +20,7 @@ class Inicio : AppCompatActivity() {
         login_ui_titleBackground.startAnimation(btt)
 
         login_btnIngresar.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, Contenido::class.java))
         }
     }
 }
