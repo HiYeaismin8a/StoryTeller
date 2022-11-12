@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    tools:context=".Inicio">
+
+    <ImageView android:id="@+id/login_ui_titleBackground"
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/lg_menu"/>
+
+    <TextView android:id="@+id/login_lblBienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_ui_titleBackground"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Bienvenido"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/comforta"/>
+
+    <TextView android:id="@+id/login_lblDemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_lblBienvenido"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="DEMO"
+        android:textSize="20sp"
+        android:textColor="#D2E9F6"/>
+
+    <Button android:id="@+id/login_btnIngresar"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/login_lblDemo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Ingresar"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#28B3FE"
+        android:fontFamily="@font/comforta"
+        android:backgroundTint="@color/white"/>
+</RelativeLayout>
