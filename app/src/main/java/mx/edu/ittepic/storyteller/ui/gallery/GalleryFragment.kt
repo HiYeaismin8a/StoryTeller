@@ -19,9 +19,9 @@ class GalleryFragment : Fragment() {
 
     private var imagenes = arrayOf(R.drawable.integrante_uno,R.drawable.integrante_dos, R
         .drawable.integrante_tres, R.drawable.integrante_cuatro)
-    private var estudiantes = arrayOf("Daniel López Quintero", "Jazmin Ochoa Benitez",
-        "Cristopher David Canalez", " Juan Mata Solis")
-    private var noctrl = arrayOf("This", "Two", "Three", "Two")
+    private var estudiantes = arrayOf("Jazmin Ochoa Benitez", "Cristopher David Canalez",
+        "Juan Mata Solis", "Daniel López Quintero")
+    private var noctrl = arrayOf("Tecnológico de Tepic", "Tecnológico de Tepic", "Tecnológico de Tepic", "Tecnologico de Tepic")
 
     override fun onCreateView(
         inflater: LayoutInflater,
