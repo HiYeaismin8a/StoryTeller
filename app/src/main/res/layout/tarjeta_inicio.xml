@@ -10,11 +10,9 @@
     card_view:cardElevation="6dp"
     card_view:contentPadding="2dp"
     >
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/tarjeta_fondo"
         android:padding="14dp"
         >
 

@@ -4,9 +4,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class Adapter_TarjetInicio(private val destacado: List<String>, private val onItemClickListener: onItemClick) : RecyclerView.Adapter<Adapter_TarjetInicio.ViewHolder>(){
+class Adapter_TarjetInicio(private val destacado: Array<String>,
+                           private val libros_nombre: Array<String>,
+                           private val libros_descripcion: Array<String>,
+                           private val libros_tags: Array<String>,
+                           private val onItemClickListener: onItemClick) : RecyclerView.Adapter<Adapter_TarjetInicio.ViewHolder>(){
 
     interface onItemClick{
         fun verClick(position: Int)
@@ -22,17 +27,25 @@ class Adapter_TarjetInicio(private val destacado: List<String>, private val onIt
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
-        viewHolder.itemButton.text = "Ver"
+        viewHolder.itemNombre.text = libros_nombre[i]
+        viewHolder.itemDescripcion.text = libros_descripcion[i]
+        viewHolder.itemTags.text = libros_tags[i]
     }
 
     inner class ViewHolder(itemview: View): RecyclerView.ViewHolder(itemview){
-        lateinit var itemButton: Button
+        var itemNombre: TextView
+        var itemDescripcion: TextView
+        var itemTags: TextView
 
         init{
             var btnVerContenido: Button = itemview.findViewById(R.id.tarjetaInicio_btnVer)
             btnVerContenido.setOnClickListener {
                 onItemClickListener.verClick(1)
             }
+
+            itemNombre = itemView.findViewById(R.id.tarjetaInicio_Nombre)
+            itemDescripcion = itemView.findViewById(R.id.tarjetaInicio_Descripcion)
+            itemTags = itemView.findViewById(R.id.tarjetaInicio_Tags)
         }
     }
 }
