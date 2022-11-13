@@ -126,7 +126,7 @@ class HomeFragment : Fragment() {
                     ) texto else "goes"
                 }
 
-                binding.opcion1.setOnClickListener {
+                binding.opcion2.setOnClickListener {
                     AlertDialog.Builder(this@HomeFragment.requireContext())
                         .setTitle("RESPUESTA CORRECTA").setMessage("Su respuesta ha sido correcta")
                         .setPositiveButton("Continuar") { d, _ ->
@@ -162,7 +162,7 @@ class HomeFragment : Fragment() {
                     ) texto else "goes"
                 }
 
-                binding.opcion1.setOnClickListener {
+                binding.opcion3.setOnClickListener {
                     AlertDialog.Builder(this@HomeFragment.requireContext())
                         .setTitle("RESPUESTA CORRECTA").setMessage("Su respuesta ha sido correcta")
                         .setPositiveButton("Continuar") { d, _ ->
