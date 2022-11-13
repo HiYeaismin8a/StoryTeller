@@ -23,9 +23,9 @@ class HomeFragment : Fragment() {
     private val binding get() = _binding!!
     private var libros = arrayOf("This, Two, Three, Two")
 
-    private var libros_nombre = arrayOf("The Gluttonous Fox, Snow White, Little red riding hood, Pinoccho")
-    private var libros_descripcion = arrayOf("A gluttonous fox in a pitch, Snow White and the Seven Dwarfs, In the forest and the wolf, Wish becoming reality")
-    private var libros_tags = arrayOf("Fantasy, Realm, Kids, Lessons")
+    private var libros_nombre = arrayOf("The Gluttonous Fox")
+    private var libros_descripcion = arrayOf("A gluttonous fox in a pitch")
+    private var libros_tags = arrayOf("Fantasy")
 
     override fun onCreateView(
         inflater: LayoutInflater,

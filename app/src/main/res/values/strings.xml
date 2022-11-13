@@ -13,4 +13,26 @@
     <string name="menu_slideshow">
         Sobre el Proyecto
     </string>
+
+    <string name="descripcion"> El proyecto “stories teller” tendrá el propósito de ser una herramienta de aprendizaje para
+los alumnos del idioma inglés en niveles educativos que van desde básico hasta medio
+superior, todo esto con el proposito de que los mismos sean capaces de tener una mejor
+comprensión en el lenguaje inglés, aprendiendo palabras nuevas atraves de la escucha
+activa en las historias presentadas, dichas historias pueden ser desde cuentos infantiles
+hasta novelas literarias dependiendo del nivel de inglés que tenga el alumno en cuestión,
+para realizar el seguimiento del aprendizaje durante los cuentos el alumno tendrá que
+rellenar espacios en blanco con palabras ya conocidas, en base a su indice de aciertos
+algunas palabras saldrán mas o menos según el dominio del alumno sobre las mismas, esto
+también aplica para estructuras gramaticales tales como “phrasal verbs” y “Verb patterns”,
+en caso que el alumno presente dificultades con alguna palabra o estructura tendrá a su
+disposición una carta explicativa en la cual podrá consultar el correcto uso de la palabra o
+estructura implicada, algo importante para la realización de esta aplicación será la
+capacidad de conseguir las licencias sobre los recursos literarios que se vayan a utilizar así
+como la grabación de la voz del narrador para los cuentos y novelas literarias. Para la
+implementación de está aplicación las escuelas tendrán a disposición la aplicación mediante
+la tienda de aplicaciones ofrecida por google conocida como “Play Store”, con esto las
+mismas podrán utilizar dispositivos móviles propios de la institución los cuales serán usados
+durante las sesiones educativas del lenguaje inglés o bien cada uno de los alumnos podrá
+llevar la aplicación instalada en su dispositivo.
+ </string>
 </resources>

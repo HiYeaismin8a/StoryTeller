@@ -16,11 +16,14 @@
         android:padding="14dp"
         >
 
-        <ImageView android:id="@+id/tarjetaNosotros_foto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <ImageView
+            android:id="@+id/tarjetaNosotros_foto"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
             android:layout_centerVertical="true"
             android:src="@drawable/perfil_placeholder"
+            android:scaleType="fitXY"
+
             />
 
         <TextView android:id="@+id/tarjetaNosotrs_Nombre"
