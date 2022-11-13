@@ -13,6 +13,7 @@ import kotlinx.coroutines.*
 import mx.edu.ittepic.storyteller.R
 import mx.edu.ittepic.storyteller.databinding.FragmentHomeBinding
 import kotlin.coroutines.EmptyCoroutineContext
+import kotlin.random.Random
 
 class HomeFragment : Fragment() {
 
@@ -62,7 +63,7 @@ class HomeFragment : Fragment() {
 
             reproducir(audios[actual])
             correcta = false
-            val opcion = (0..2).random()
+            val opcion = (0..2).random(Random(System.currentTimeMillis()))
             ponerAlerts(opcion)
             this@HomeFragment.requireActivity().runOnUiThread {
                 binding.opcion1.isEnabled = true
@@ -79,11 +80,11 @@ class HomeFragment : Fragment() {
         when (correcto) {
             0 -> {
                 this@HomeFragment.requireActivity().runOnUiThread { binding.opcion1.text = respuestas[actual++] }
-                var texto = respuestas.random()
+                var texto = respuestas.random(Random(System.currentTimeMillis()))
                 this@HomeFragment.requireActivity().runOnUiThread {
                     binding.opcion2.text = if (texto != binding.opcion1.text.toString()) texto else "goes"
                 }
-                texto = respuestas.random()
+                texto = respuestas.random(Random(System.currentTimeMillis()))
                 this@HomeFragment.requireActivity().runOnUiThread {
                     binding.opcion3.text = if (texto != binding.opcion1.text.toString()) texto else "goes"
                 }
