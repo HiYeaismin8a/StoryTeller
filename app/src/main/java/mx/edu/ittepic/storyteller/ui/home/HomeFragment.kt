@@ -35,15 +35,11 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        binding.prueba.setOnClickListener {
-            val intent = Intent(activity, Demo::class.java)
-            startActivity(intent)
-        }
-
         val recyclerView = binding.recyclerView
         val adapter = Adapter_TarjetInicio(libros, libros_nombre, libros_descripcion, libros_tags, object : Adapter_TarjetInicio.onItemClick {
             override fun verClick(position: Int) {
-
+                val intent = Intent(activity, Demo::class.java)
+                startActivity(intent)
             }
         })
         recyclerView.layoutManager = LinearLayoutManager(binding.root.context)

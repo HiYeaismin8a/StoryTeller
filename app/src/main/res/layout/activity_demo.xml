@@ -24,7 +24,9 @@
     <ImageButton android:id="@+id/home_btnIniciar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/perfil_placeholder"
+        android:layout_below="@id/demo_Contenido"
+        android:background="@color/white"
+        android:src="@drawable/demo_play"
         android:layout_centerInParent="true"
         />
 
@@ -70,7 +72,7 @@
             android:text="Opcion 3" />
     </LinearLayout>
 
-    <ImageButton
+    <ImageButton android:id="@+id/demo_hint"
         android:layout_width="wrap_content"
         android:layout_height="150dp"
         android:layout_below="@id/demo_Contenido"
@@ -82,5 +84,5 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="#28B3FE"
-        android:text="Repetir" />
+        android:text="Salir" />
 </RelativeLayout>

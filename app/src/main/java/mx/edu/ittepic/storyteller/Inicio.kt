@@ -17,7 +17,6 @@ class Inicio : AppCompatActivity() {
         login_btnIngresar.startAnimation(btt)
         login_lblBienvenido.startAnimation(btt)
         login_lblDemo.startAnimation(btt)
-        login_ui_titleBackground.startAnimation(btt)
 
         login_btnIngresar.setOnClickListener {
             startActivity(Intent(this, Contenido::class.java))

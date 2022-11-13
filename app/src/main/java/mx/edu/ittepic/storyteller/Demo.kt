@@ -56,18 +56,20 @@ class Demo : AppCompatActivity() {
         binding.demoContenido.isVisible = false
         binding.textoCuento.isVisible = false
         binding.repetir.isVisible = false
+        binding.demoHint.isVisible = false
 
         binding.homeBtnIniciar.setOnClickListener {
 
 
             contarCuento.start()
-            binding.repetir.setOnClickListener { reproducir(audios[actual - 1]) }
+            binding.repetir.setOnClickListener { finish() }
 
             binding.demoContenido.isVisible = true
             binding.textoCuento.isVisible = true
             binding.repetir.isVisible = true
-            binding.homeLblInicio.isVisible = false
+            binding.homeLblInicio.setText("Empecemos!")
             binding.homeBtnIniciar.isVisible = false
+            binding.demoHint.isVisible = true
         }
     }
 

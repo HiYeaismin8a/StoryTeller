@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tarjeta_inicio"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    card_view:cardBackgroundColor="#ffffff"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="6dp"
+    card_view:contentPadding="2dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        >
+
+        <ImageView android:id="@+id/tarjetaNosotros_foto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/perfil_placeholder"
+            />
+
+        <TextView android:id="@+id/tarjetaNosotrs_Nombre"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tarjetaNosotros_foto"
+            android:layout_marginLeft="15dp"
+            android:paddingBottom="5dp"
+            android:text="Nombre del estudiante"
+            android:fontFamily="@font/comforta"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            />
+
+        <TextView android:id="@+id/tarjetaNostros_NoCtrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tarjetaNosotros_foto"
+            android:layout_below="@id/tarjetaNosotrs_Nombre"
+            android:layout_marginLeft="15dp"
+            android:text="Numero de control"
+            android:fontFamily="@font/comforta"
+            android:textStyle="bold"
+            android:textColor="#515050"
+            />
+
+        <TextView android:id="@+id/tarjetaNosotrs_Carrera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tarjetaNosotros_foto"
+            android:layout_below="@id/tarjetaNostros_NoCtrl"
+            android:layout_marginLeft="15dp"
+            android:text="Carrera"
+            android:fontFamily="@font/comforta"
+            android:textStyle="bold"
+            android:textColor="#515050"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
