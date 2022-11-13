@@ -113,13 +113,13 @@ class HomeFragment : Fragment() {
             }
             1 -> {
                 this@HomeFragment.requireActivity().runOnUiThread { binding.opcion2.text = respuestas[actual++] }
-                var texto = respuestas.random()
+                var texto = respuestas.random(Random(System.currentTimeMillis()))
                 this@HomeFragment.requireActivity().runOnUiThread {
                     binding.opcion1.text = if (texto != binding
                             .opcion2.text.toString()
                     ) texto else "goes"
                 }
-                texto = respuestas.random()
+                texto = respuestas.random(Random(System.currentTimeMillis()))
                 this@HomeFragment.requireActivity().runOnUiThread {
                     binding.opcion3.text = if (texto != binding
                             .opcion2.text.toString()
@@ -149,13 +149,13 @@ class HomeFragment : Fragment() {
             }
             2 -> {
                 this@HomeFragment.requireActivity().runOnUiThread { binding.opcion3.text = respuestas[actual++] }
-                var texto = respuestas.random()
+                var texto = respuestas.random(Random(System.currentTimeMillis()))
                 this@HomeFragment.requireActivity().runOnUiThread {
                     binding.opcion1.text = if (texto != binding
                             .opcion3.text.toString()
                     ) texto else "goes"
                 }
-                texto = respuestas.random()
+                texto = respuestas.random(Random(System.currentTimeMillis()))
                 this@HomeFragment.requireActivity().runOnUiThread {
                     binding.opcion2.text = if (texto != binding
                             .opcion3.text.toString()
