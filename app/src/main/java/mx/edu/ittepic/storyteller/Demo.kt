@@ -19,23 +19,24 @@ class Demo : AppCompatActivity() {
                 "tree",
         "Making ? as small as he could, he passed through the narrow hole so other animals wouldn’t see him gobbling up that rich banquet.",
         "And so the ? fox ate, and ate, and ate even more. He had never eaten so much in his entire life!, but when " +
-                "it was all over and he ? to get out of the tree, he couldn’t move an inch.",
-        "He had grown too fat to climb out of the hole!.",
+                "it was all over and he tried to get out of the tree, he couldn’t move an inch.",
+        "He had ? too fat to climb out of the hole!.",
         "But the gluttonous fox did not realize that he had eaten so much that he though the tree had become ?. ",
-        "He poked his head out of the hole and yelled:",
+        "He poked his head out of the hole and ?:",
         "?!, Help!, someone help me out of this horrible trap.",
         "At that very moment a weasel ? by, seeing it the fox exclaimed:",
         "-	Hey weasel, help me out please. The tree is shrinking down and is ?. ",
         "“It doesn’t seem that way to me”, the little weasel laughed. “The tree is just as ? as when I saw it this morning”, perhaps you just gained more weight. ",
-        "-	Don’t talk nonsense and get me out of here!, the fox screeched back at him. “I’m dying, seriously”.",
+        "-	Don’t talk ? and get me out of here!, the fox screeched back at him. “I’m dying, seriously”.",
         "To this the weasel ?:  ",
-        "“You got it coming for eating too much. “. The bad thing is that your eyes are bigger than your stomach. And so you’ll have to stay there until you lose weight… and then you can go out. ",
+        "“You got it coming for ? too much. “. The bad thing is that your eyes are bigger than your stomach. And so " +
+                "you’ll have to stay there until you lose weight… and then you can go out. ",
         "This way you will ? not to be so gluttonous.",
         "The poor fox had to stay two days and two nights in his sad confinement. And so he yelled: “I will never eat this much ever ?!. ",
     )
     private val respuestas = arrayOf(
-        "found", "himself", "gluttonous", "tried", "smaller", "Help", "passed",
-        "crushing me", "big", "replied", "learn", "again"
+        "found", "himself", "gluttonous", "grown", "smaller", "yelled", "Help", "passed",
+        "crushing me", "big", "nonsense", "replied", "eating", "learn", "again"
     )
 
     private val audios = arrayOf(
@@ -97,6 +98,10 @@ class Demo : AppCompatActivity() {
 
             }
         } while (actual < respuestas.size)
+        AlertDialog.Builder(this@Demo).setTitle("FELICIDADES").setMessage(
+            "HAZ COMPLETADO EL " +
+                    "CUENTO"
+        ).show()
     }
 
     fun ponerAlerts(correcto: Int) {
@@ -214,5 +219,6 @@ class Demo : AppCompatActivity() {
         reproductor.start()
         while (reproductor.isPlaying) {
         }
+        reproductor.release()
     }
 }
